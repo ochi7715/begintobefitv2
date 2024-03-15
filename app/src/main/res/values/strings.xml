@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">BeginToBeFit</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="signup_header">Create an account</string>
+    <string name="login_header">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="signup">Sign Up</string>
+    <string name="name_hint">Name</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="homeGreeting">Hi, John Smith</string>
+    <string name="dowSunday">U</string>
+    <string name="dowMonday">M</string>
+    <string name="dowTuesday">T</string>
+    <string name="dowWednesday">W</string>
+    <string name="dowThursday">H</string>
+    <string name="dowFriday">F</string>
+    <string name="dowSaturday">S</string>
+    <string name="workoutStreak1">WORKOUT</string>
+    <string name="workoutStreak2">STREAK</string>
+    <string name="currentStreak">🔥7 DAYS🔥</string>
+    <string name="goalProgress1">GOAL</string>
+    <string name="goalProgress2">PROGRESS</string>
+    <string name="currentGoalProgress">63.8%</string>
+    <string name="homeStepChartHeader">STEPS</string>
+    <string name="homeStepChartMore">More ></string>
+    <string name="homeRecentWorkoutHeader">RECENT WORKOUTS</string>
+    <string name="homeRecentWorkoutOne">Saturday</string>
+    <string name="homeRecentWorkoutTwo">Friday</string>
+    <string name="homeRecentWorkoutThree">Thursday</string>
+    <string name="homeRecentWorkoutFour">Wednesday</string>
+    <string name="homeRecentWorkoutFive">Tuesday</string>
+    <string name="homeRecentWorkoutSix">Monday</string>
+    <string name="homeRecentWorkoutSeven">Sunday</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

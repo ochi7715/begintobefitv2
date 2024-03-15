@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/homeHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:drawableStart="@drawable/profilepic"
+                android:drawableEnd="@drawable/bell"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/app_name"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/homeGreeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homeHeader"
+                android:layout_marginHorizontal="40dp"
+                android:text="@string/homeGreeting"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/dowWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homeGreeting"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="7.0">
+
+                <Button
+                    android:id="@+id/dowSundayButton"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#EDEBFC"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/dowSunday"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dowMondayButton"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#EDEBFC"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/dowMonday"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dowTuesdayButton"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#EDEBFC"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/dowTuesday"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dowWednesdayButton"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#EDEBFC"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/dowWednesday"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dowThursdayButton"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#EDEBFC"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/dowThursday"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dowFridayButton"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#EDEBFC"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/dowFriday"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dowSaturdayButton"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_marginRight="2.5dp"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#EDEBFC"
+                    android:clickable="false"
+                    android:gravity="center"
+                    android:text="@string/dowSaturday"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/homeStreakGoalWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dowWrapper"
+                android:paddingHorizontal="35dp"
+                android:paddingBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/homestreakgoalborder"
+                    android:gravity="center"
+                    android:minWidth="160dp"
+                    android:minHeight="105dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="@string/workoutStreak1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter_bold"
+                        android:text="@string/workoutStreak2"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/currentStreak"
+                        android:textColor="#FF0000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/homestreakgoalborder"
+                    android:gravity="center"
+                    android:minWidth="160dp"
+                    android:minHeight="105dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/goalProgress1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/goalProgress2"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/currentGoalProgress"
+                        android:textColor="#FF0000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/homeStepChartWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homeStreakGoalWrapper"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/homeStepChartHeaderWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/homeStepChartHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center_vertical"
+                        android:padding="0dp"
+                        android:paddingBottom="10dp"
+                        android:text="@string/homeStepChartHeader"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="@color/white"
+                        android:minHeight="0dp"
+                        android:text="@string/homeStepChartMore"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/homeStepChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/homeStepChartHeaderWrapper"
+                    android:layout_marginTop="2dp"
+                    android:minHeight="250dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/homeRecentWorkoutWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homeStepChartWrapper"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center_vertical"
+                    android:padding="0dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/homeRecentWorkoutHeader"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/recentWorkoutButtonOne"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/homerecentworkoutmore"
+                    android:paddingStart="25dp"
+                    android:text="@string/homeRecentWorkoutOne"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp" />
+
+                <Button
+                    android:id="@+id/recentWorkoutButtonTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/homerecentworkoutmore"
+                    android:paddingStart="25dp"
+                    android:text="@string/homeRecentWorkoutTwo"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp" />
+
+                <Button
+                    android:id="@+id/recentWorkoutButtonThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/homerecentworkoutmore"
+                    android:paddingStart="25dp"
+                    android:text="@string/homeRecentWorkoutThree"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp" />
+
+                <Button
+                    android:id="@+id/recentWorkoutButtonFour"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/homerecentworkoutmore"
+                    android:paddingStart="25dp"
+                    android:text="@string/homeRecentWorkoutFour"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp" />
+
+                <Button
+                    android:id="@+id/recentWorkoutButtonFive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/homerecentworkoutmore"
+                    android:paddingStart="25dp"
+                    android:text="@string/homeRecentWorkoutFive"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp" />
+
+                <Button
+                    android:id="@+id/recentWorkoutButtonSix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/homerecentworkoutmore"
+                    android:paddingStart="25dp"
+                    android:text="@string/homeRecentWorkoutSix"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp" />
+
+                <Button
+                    android:id="@+id/recentWorkoutButtonSeven"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"
+                    android:backgroundTint="@color/white"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/homerecentworkoutmore"
+                    android:paddingStart="25dp"
+                    android:text="@string/homeRecentWorkoutSeven"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    app:cornerRadius="15dp"
+                    app:strokeColor="#000000"
+                    app:strokeWidth="1dp" />
+
+                <FrameLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/frameLayoutRecentWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

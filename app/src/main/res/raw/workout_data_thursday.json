@@ -1,0 +1,19 @@
+{
+  "exercises": [
+    {
+      "name": "Lunges",
+      "sets": 3,
+      "reps": 12
+    },
+    {
+      "name": "Leg Press",
+      "sets": 4,
+      "reps": 10
+    },
+    {
+      "name": "Calf Raises",
+      "sets": 3,
+      "reps": 15
+    }
+  ]
+}

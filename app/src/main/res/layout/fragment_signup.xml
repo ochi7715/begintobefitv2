@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.signup.homeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:context=".LoginActivity">
+
+        <TextView
+            android:id="@+id/signUpHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/inter_black"
+            android:text="@string/signup_header"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <RelativeLayout
+            android:id="@+id/signUpFormWrapper"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpHeader"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp">
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/emailicon"
+                android:drawablePadding="20dp"
+                android:hint="@string/name_hint"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameEditText"
+                android:layout_marginTop="25dp"
+                android:drawableStart="@drawable/emailicon"
+                android:drawablePadding="20dp"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailEditText"
+                android:layout_marginTop="25dp"
+                android:drawableStart="@drawable/passwordicon"
+                android:drawableEnd="@drawable/showpassword"
+                android:drawablePadding="20dp"
+                android:drawableTint="#000000"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/confirmPasswordEditText"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordEditText"
+                android:layout_marginTop="25dp"
+                android:drawableStart="@drawable/passwordicon"
+                android:drawableEnd="@drawable/showpassword"
+                android:drawablePadding="20dp"
+                android:drawableTint="#000000"
+                android:hint="@string/confirm_password_hint"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/rememberMeCheckBox"
+                android:layout_width="164dp"
+                android:layout_height="27dp"
+                android:layout_below="@id/confirmPasswordEditText"
+                android:layout_marginTop="1dp"
+                android:text="@string/remember_me"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/signUpFormWrapper"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:backgroundTint="#1DA1FA"
+            android:text="@string/signup"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+        <LinearLayout
+            android:id="@+id/signUpButtonWrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/signupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:fontFamily="@font/inter_bold"
+                android:text="@string/already_have_an_account"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="0dp"
+                android:layout_marginTop="0dp"
+                android:background="#00000000"
+                android:clickable="true"
+                android:fontFamily="@font/inter_bold"
+                android:padding="0dp"
+                android:text="@string/login_header"
+                android:textAllCaps="false"
+                android:textColor="#1DA1FA"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

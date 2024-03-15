@@ -1,0 +1,11 @@
+{
+  "steps": {
+    "Monday": 7500,
+    "Tuesday": 8100,
+    "Wednesday": 8200,
+    "Thursday": 7800,
+    "Friday": 8400,
+    "Saturday": 8800,
+    "Sunday": 9200
+  }
+}

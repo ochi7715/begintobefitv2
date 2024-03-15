@@ -1,0 +1,14 @@
+{
+  "exercises": [
+    {
+      "name": "Military Press",
+      "sets": 4,
+      "reps": 8
+    },
+    {
+      "name": "Arnold Press",
+      "sets": 3,
+      "reps": 10
+    }
+  ]
+}

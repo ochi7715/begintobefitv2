@@ -1,0 +1,24 @@
+{
+  "exercises": [
+    {
+      "name": "Pull-ups",
+      "sets": 3,
+      "reps": 8
+    },
+    {
+      "name": "Deadlifts",
+      "sets": 4,
+      "reps": 6
+    },
+    {
+      "name": "Military Press",
+      "sets": 3,
+      "reps": 10
+    },
+    {
+      "name": "Planks",
+      "sets": 3,
+      "reps": 60
+    }
+  ]
+}

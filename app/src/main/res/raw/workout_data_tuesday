@@ -1,0 +1,14 @@
+{
+  "exercises": [
+    {
+      "name": "Pull-ups",
+      "sets": 4,
+      "reps": 6
+    },
+    {
+      "name": "Dumbbell Rows",
+      "sets": 3,
+      "reps": 10
+    }
+  ]
+}
